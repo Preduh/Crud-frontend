@@ -17,8 +17,8 @@ class UserList extends Component {
         return (
             <div>
                 <form action="https://register-mongoose.herokuapp.com/register" method="POST">
-                    <input type="text" name="name"></input>
-                    <input type="text" name="email"></input>
+                    <input type="text" name="name" placeholder="Insert your name..."></input>
+                    <input type="email" name="email" placeholder="Insert your email..."></input>
                     <button type="submit">Register</button>
                 </form>
                 <div>
