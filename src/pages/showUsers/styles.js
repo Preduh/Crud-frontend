@@ -23,8 +23,8 @@ export const FormRegister = styled.div`
         outline: none;
         background-color: #40AD39;
         border-radius: 8px;
-        height: 25px;
-        width: 30%;
+        height: 30px;
+        max-width: 350px;
         color: white;
         cursor: pointer;
         position: relative;
