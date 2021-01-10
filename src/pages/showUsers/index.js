@@ -22,7 +22,12 @@ class UserList extends Component {
                     <button type="submit">Register</button>
                 </form>
                 <div>
-                    {this.state.users.map(user => <p key={user._id}>{user._id} - {user.name} - {user.email}</p>)}
+                    {this.state.users.map(user => 
+                        <form key={user._id} action={"https://register-mongoose.herokuapp.com/deleteUser/"+ user._id} method="POST">
+                            <p>{user.name} - {user.email}</p>
+                            <button type="submit">Remove</button>
+                        </form>
+                    )}
                 </div>
             </div>
         )
