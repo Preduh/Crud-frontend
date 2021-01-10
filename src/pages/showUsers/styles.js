@@ -18,7 +18,7 @@ export const FormRegister = styled.div`
         outline: none;
     }
 
-    button {
+    .register {
         border: none;
         outline: none;
         background-color: #40AD39;
@@ -32,9 +32,10 @@ export const FormRegister = styled.div`
         transform: translateX(-50%);
     }
 
-    button:hover {
+    .register:hover {
         background-color: #307F2B;
     }
+
 `
 
 export const FormContent = styled.div`
@@ -46,5 +47,20 @@ export const FormContent = styled.div`
         margin: 10px 0;
         background-color: #E4E4E4;
         border-radius: 8px;
+    }
+
+    .remove {
+        border: none;
+        outline: none;
+        background-color: #E05A24;
+        border-radius: 50px;
+        height: 30px;
+        max-width: 350px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .remove:hover {
+        background-color: #CD3B00;
     }
 `;

@@ -22,7 +22,7 @@ class UserList extends Component {
                     <input type="text" name="name" autoComplete="off"></input>
                     <label for="email">Email</label>
                     <input type="email" name="email" autoComplete="off"></input>
-                    <button type="submit">Register</button>
+                    <button className="register" type="submit">Register</button>
                 </form>
                 </FormRegister>
                 <div>
@@ -30,7 +30,7 @@ class UserList extends Component {
                         <FormContent>
                             <form key={user._id} action={"https://register-mongoose.herokuapp.com/deleteUser/"+ user._id} method="POST">
                                 <p>{user.name} - {user.email}</p>
-                                <button type="submit">Remove</button>
+                                <button className="remove" type="submit">Remove</button>
                             </form>
                         </FormContent>
                     )}
